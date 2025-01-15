@@ -67,6 +67,12 @@ img {
   transition: opacity 0.3s;
 }
 
+.btn--small {
+  width: 140px;
+  height: 40px;
+  font-size: 12px;
+}
+
 .btn:hover {
   opacity: 0.7;
 }
@@ -213,7 +219,6 @@ img {
   padding: 60px 0;
 }
 
-
 .order .container {
   display: flex;
   justify-content: space-between;
@@ -221,20 +226,31 @@ img {
 
   padding-right: 90px;
 }
+
 .order__img {
   max-width: 470px;
 }
+
 .order__text {
   max-width: 360px;
 }
+
+.order__img:hover{
+  opacity: 0.5;
+  transform: scale(1.1em);
+  cursor: pointer;
+}
+
 .order_title {
   font-size: 44px;
   margin-bottom: 25px;
 }
+
 .order_desc {
   opacity: 0.7;
   margin-bottom: 15px;
 }
+
 .order_price {
   font-weight: 500;
   color: #f6762c;
@@ -242,16 +258,91 @@ img {
 
   font-size: 20px;
 }
+
 .order_price--old {
   font-size: 16px;
   text-decoration-line: line-through;
   opacity: 0.5;
 }
 
-.order_price +  .order_price{
-  margin-left:3px;
+.order_price + .order_price {
+  margin-left: 3px;
 }
 
 .order .btn {
   margin-top: 10px;
+}
+
+.product{
+  padding: 150px 0;
+}
+
+.product .container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.product_card {
+  box-sizing: border-box;
+
+  width: 555px;
+  min-height: 300px;
+
+  padding: 60px 25px 60px 290px;
+
+  background-color: #150404;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product_card:nth-child(even){
+  padding: 60px 290px 60px 30px;
+}
+
+.product_title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.product_desc {
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.product_price {
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #f6762c;
+}
+
+.product_price--old {
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.product .btn {
+  margin-top: 10px;
+}
+
+.product_price + .product_price {
+  margin-left: 5px;
+}
+
+.card-queen {
+  background-image: url(./img/group1.jpg);
+}
+
+.card-hut {
+  background-image: url(./img/group2.jpg);
+}
+
+.card-king {
+  background-image: url(./img/group3.jpg);
+}
+
+.card-papa {
+  background-image: url(./img/group4.jpg);
 }
