@@ -43,7 +43,8 @@ img {
 }
 
 .container {
-  max-width: 1140px;
+  box-sizing: border-box;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -165,7 +166,7 @@ img {
 }
 
 .food-list__card:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   opacity: 0.8;
 }
 
@@ -186,7 +187,7 @@ img {
 .food-list_text-wrapper {
   padding: 20px;
 }
-.welcome_text{
+.welcome_text {
   opacity: 0; /* Початкова непрозорість */
   transform: translateX(-100px);
   animation: slideIn 0.7s ease-out forwards; /* Виклик анімації */
@@ -203,4 +204,54 @@ img {
     opacity: 1;
     transform: translateX(0); /* Кінцева позиція */
   }
+}
+
+/* Order */
+
+.order {
+  background: #312f30;
+  padding: 60px 0;
+}
+
+
+.order .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 90px;
+}
+.order__img {
+  max-width: 470px;
+}
+.order__text {
+  max-width: 360px;
+}
+.order_title {
+  font-size: 44px;
+  margin-bottom: 25px;
+}
+.order_desc {
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+.order_price {
+  font-weight: 500;
+  color: #f6762c;
+  letter-spacing: 0.1em;
+
+  font-size: 20px;
+}
+.order_price--old {
+  font-size: 16px;
+  text-decoration-line: line-through;
+  opacity: 0.5;
+}
+
+.order_price +  .order_price{
+  margin-left:3px;
+}
+
+.order .btn {
+  margin-top: 10px;
 }
