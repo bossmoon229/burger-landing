@@ -547,7 +547,7 @@ img {
   }
 
   .welcome_text {
-    width: 100%;
+    width: 0%;
   }
 
   .welcome__title {
@@ -575,7 +575,7 @@ img {
     gap: 10px;
   }
   .header__list {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     gap: 10px;
   }
@@ -592,6 +592,9 @@ img {
 
   .welcome__title {
     font-size: 30px;
+  }
+  .welcome_text{
+    width: 50%;
   }
 
   .welcome__desc {
@@ -623,6 +626,7 @@ img {
   .download .container {
     flex-direction: column;
     gap: 20px;
+    align-items: center;
   }
 
   .footer .container {
@@ -723,8 +727,8 @@ img {
   .welcome::before {
     content: "";
     background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     
     position: absolute;
     left: 0;
